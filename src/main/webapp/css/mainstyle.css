@@ -1,0 +1,175 @@
+#container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "post post aside"
+        "post post aside"
+        "footer footer footer";
+}
+/* HEADER CSS 시작~ */
+header {
+    grid-area: header;
+}
+#menu {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#menu li {
+    display: inline;
+    padding-left: 100px;
+    list-style-type: none;
+}
+#menu li a {
+    font-size: 20px;
+}
+#menu li a:hover {
+    color: red;
+    font-weight: bold;
+}
+/* HEADER CSS 끝 */
+
+/* ASIDE CSS 시작 ~ */
+aside {
+    grid-area: aside;
+}
+
+/*프로필 CSS ~*/
+aside .profile {
+    position: fixed;
+    float: right;
+    right: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+aside .profile table {
+    width: 250px;
+    height: 100px;
+}
+aside .profile img {
+    width: 90px;
+    height: 90px;
+}
+aside .profile #log-id {
+    font-size: 15px;
+    text-align: center;
+}
+aside .profile #logout {
+    background-color: lightgray;
+    color: red;
+}
+aside .profile #logout:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Section 부분 CSS */
+.fileUpload {
+    grid-area: post;
+}
+footer {
+    grid-area: footer;
+}
+
+/* 기본 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* th 요소 스타일 */
+th {
+    background-color: #f2f2f2; /* 회색 배경 */
+}
+
+/* tr 요소의 호버 스타일 */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* 링크 스타일 */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* article 클래스 스타일 */
+article {
+    margin: 20px 0;
+}
+
+article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "post"
+            "aside"
+            "footer";
+    }
+
+    #menu li {
+        display: block;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    aside .profile {
+        position: static;
+        float: none;
+        right: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    aside .profile table {
+        width: 100%;
+    }
+
+    aside .profile img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .fileUpload {
+        grid-area: post;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    article h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,74 @@
+* {
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mainTitle {
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    color:red;
+}
+
+form input[type="text"], form textarea, form input[type="file"], form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+form input[type="reset"] {
+    background-color: lightgray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+button, button a {
+    background-color: aliceblue;
+    color: #1e6b7b;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form input[type="reset"] {
+    background-color: gray;
+}
+
+

@@ -1,0 +1,60 @@
+#container {
+    text-align: center;
+}
+#login_form, fieldset div {
+    display: inline-block;
+    text-align: right;
+}
+.login {
+    width: 250px;
+    display: block;
+}
+.login {
+    background-color: lightgreen;
+}
+.login:hover {
+    color: blue;
+    font-weight: bold;
+}
+#join {
+    text-align: center;
+}
+#join a {
+    text-decoration: none;
+    color: #4B89DC;
+}
+#join a:hover {
+    color:red;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #login_form, fieldset div {
+        display: block;
+        text-align: center;
+    }
+
+    #block {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #login_form, fieldset div {
+        display: inline-block;
+    }
+    
+    #join {
+        font-size: 16px;
+    }
+
+    #join a {
+        display: block;
+        padding-top: 10px;
+    }
+}

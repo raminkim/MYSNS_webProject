@@ -1,0 +1,55 @@
+#container {
+    text-align: center;
+}
+#block {
+    display: inline-block;
+    text-align: center;
+}
+.join {
+    width: 300px;
+    display: block;
+}
+.join:hover {
+    color: blue;
+    font-weight: bold;
+}
+#idck_result, #pwck_result {
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+#submit input:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        text-align: center;
+        font-size: 20px;
+    }
+    #block {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #join_form {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .join {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #idck_result, #pwck_result {
+        font-size: 14px;
+    }
+
+    #submit input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
